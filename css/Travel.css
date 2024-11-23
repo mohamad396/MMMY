@@ -1,0 +1,200 @@
+/* Start Variables */
+:root{
+    --main-color:#86b817;
+    --transparent-color:rgb(15 116 143 /70%);
+    --section-padding: 100px;
+}
+/* End Variables */
+/* Start Components */
+.button{
+    background-color: var(--main-color);
+    width: 150px;
+    border-radius: 50px;
+    outline: transparent;
+    border: transparent;
+    text-align: center;
+}
+/* End Components */
+/* Start Global Rules */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Open Sans", sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: unset;
+}
+.container{
+    padding: 0px 15px;
+    margin: 0px auto;
+    margin: auto;
+}
+/* Small */
+@media (min-width: 768px){
+    .container{
+        width: 750px;
+    }
+    
+}
+/* Medium */
+@media (min-width: 992px){
+    .container{
+        width: 970px;
+    }
+}
+/* Large */
+@media (min-width: 1200px){
+    .container{
+        width: 1170px;
+    }
+}
+/* End Global Rules */
+/* Start Header */
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    
+}
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 97px;
+}
+.header::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background-color: #a2a2a2;
+    bottom: 20px;
+    left: 15px;
+    width: calc(100% - 30px);
+}
+.header .logo{
+    font-family: "Unbounded", sans-serif;
+    font-size: 50px;
+    padding: 40px 10px;
+    color: var(--main-color);
+}
+.header .logo span{
+    color: white;
+}
+.header .nav{
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.header .nav ul{
+    display: flex;
+}
+.header .nav ul li a{
+    display: block;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 40px 10px;
+    position: relative;
+    font-weight: bold;
+    z-index: 2;
+    
+}
+
+.header .nav ul li a.active,
+.header .nav ul li a:hover{
+    color: var(--main-color);
+    font-weight: bold;
+    border-bottom: 1px solid var(--main-color);
+}
+.header .nav ul li a.button{
+    display: block;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    padding: 10px 10px;
+    margin: 30px 20px;
+    position: relative;
+    z-index: 2;
+}
+.header .nav ul li a.button:hover{
+    color: var(--main-color);
+    background-color: white;
+    transition: 1s;
+}
+/* End Header */
+/* Start Landing */
+.Landing{
+    min-height: 100vh;
+    background-color: #1f201f;
+    background-image: url("../images/sphinix.jpg");
+    background-size: cover;
+    position: relative;
+}
+.Landing .overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 /60%);
+}
+.Landing .text{
+    position: absolute;
+    color: white;
+    width: max-content;
+    font-size: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 250px;
+}
+.Landing .text .content{
+    max-width: 1000px;
+}
+@media(max-width:767px){
+    .Landing .text{
+        width: 100%;
+    }
+    .Landing .text .content{
+        max-width: 100%;
+    }
+}
+.search-bar{
+    padding: 20px;
+    width: 780px;
+    border-radius: 50px;
+    margin-top: 40px;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+.search-bar::placeholder{
+    font-size: 16px;
+}
+.search-bar + div>.submit{
+    position: absolute;
+    top: 117px;
+    left: calc(100% - 143px);
+    width: 100px;
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+}
+.search-bar + div>.submit:hover{
+   cursor: pointer;
+}
+
+/* End Landing */
