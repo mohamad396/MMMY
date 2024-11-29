@@ -1,8 +1,6 @@
 /* Start Variables */
 :root{
     --main-color:#86b817;
-    --transparent-color:rgb(15 116 143 /70%);
-    --section-padding: 100px;
 }
 /* End Variables */
 /* Start Components */
@@ -101,7 +99,7 @@ a{
     align-items: center;
     justify-content: flex-end;
 }
-.header .nav ul{
+.header .nav>ul{
     display: flex;
 }
 .header .nav ul li a{
@@ -137,6 +135,42 @@ a{
     background-color: black;
     transition: 1s;
 }
+/* Start menu */
+.header .menu{
+    position: absolute;
+    background-color: white;
+    z-index:-1 ;
+    display: block;
+    top: calc(100% + 2px);
+    opacity: 0;
+    transition: top 0.3s, opacity 0.3s;
+
+  }
+  .header .menu .links:first-of-type li:last-child
+    {
+      border-bottom: 1px solid #e9e6e9;
+    }
+      .header .menu .links li{
+        position: relative;
+      }
+      .header .menu .links li:not(:last-child)
+      {
+        border-bottom: 1px solid #e9e6e9;
+      }
+      .header .menu .links li a{
+        color: black;
+        padding: 10px;
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      .header .nav>ul > li:hover .menu {
+        opacity: 1;
+        z-index: 100;
+      }
+      
+    /* End menu */
 /* End Header */
 /*Start Contact*/
 .contact .container{
