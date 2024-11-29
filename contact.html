@@ -7,7 +7,6 @@
         <!-- Font Awesome Library -->
         <link rel="stylesheet" href="css/all.min.css">
         <!-- Main Css File -->
-         <link rel="stylesheet" href="css/Travel.css">
          <link rel="stylesheet" href="css/contact.css">
         <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,13 +21,25 @@
             <div class="nav">
                 <ul>
                     <li><a href="index.html" >Home</a></li>
-                    <li><a href="About-Us">About-Us</a></li>
+                    <li><a href="AboutUs.html">About-Us</a></li>
                     <li><a href="contact.html" class="active">Contact</a></li>
-                    <li><a href="Pages">Pages</a></li>
-                    <li ><a href="register.html" class="button">Register</a></li>
+                    <li><a>Pages <i class="fa-solid fa-angle-down"></i></a>
+                          <!-- Start Menu -->
+                            <div class="menu">
+                                <ul class="links">
+                                    <li><a href="Destination.html">Destination</a></li>
+                                    <li><a href="Services">Services</a></li>
+                                    <li><a href="Packages">Packages</a></li>
+                                </ul>
+                            </div>
+    
+                        <!-- End Menu -->
+                    </li>
+                    <li ><a href="Register" class="button">Register</a></li>
                 </ul>
             </div>
         </div>
+       
     </div>
     <!-- End Header -->
     <!-- Start contact -->
@@ -66,12 +77,10 @@
                      </div>
                 </div>
                <div class="box2">
-                <form class="contact-form">
-                    <div>
-                        <input type="text" name="name" placeholder="Your Name" required><input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div><input type="text" placeholder="Subject" required></div>
-                    <div> <textarea name="" id="" placeholder="Message" required></textarea></div>
+                <form action="">
+                    <div> <input type="text" placeholder="Your Name"><input type="text" placeholder="Your Email"></div>
+                    <div><input type="text" placeholder="Subject"></div>
+                    <div> <textarea name="" id="" placeholder="Message"></textarea></div>
                     <div><input type="submit" value="Send Message" class="Send"></div>
                 </form>
                </div>
@@ -79,6 +88,5 @@
         </div>
         </div>
      <!-- End contact -->
-     <script src="scripts/contact.js"></script>
 </body>
 </html>
