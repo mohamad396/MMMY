@@ -101,7 +101,7 @@ a{
     align-items: center;
     justify-content: flex-end;
 }
-.header .nav ul{
+.header .nav > ul {
     display: flex;
 }
 .header .nav ul li a{
