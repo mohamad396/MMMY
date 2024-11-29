@@ -136,42 +136,38 @@ a{
     background-color: white;
     transition: 1s;
 }
-.header .menu{
-    position: absolute;
-    background-color: white;
-    z-index:-1 ;
-    display: block;
-    top: calc(100% + 5px);
-    opacity: 0;
-    transition: top 0.3s, opacity 0.3s;
 
-  }
-  .header .menu .links:first-of-type li:last-child
-    {
-      border-bottom: 1px solid #e9e6e9;
-    }
-      .header .menu .links li{
-        position: relative;
-      }
-      .header .menu .links li:not(:last-child)
-      {
-        border-bottom: 1px solid #e9e6e9;
-      }
-      .header .menu .links li a{
-        color: black;
-        padding: 10px;
-        display: block;
-        font-size: 16px;
-        font-weight: bold;
-      }
-      
-      .header .nav>ul > li:hover .menu {
-        opacity: 1;
-        z-index: 100;
-      }
-      
-    /* End menu */
+/* Start Menu */
 
+.header .menu {
+ position: absolute;
+ background-color: white;
+ z-index: -1;
+ display: block;
+ top: calc(100% + 5px);
+ opacity: 0;
+ transition: top 0.3s, opacity 0.3s;
+}
+
+.header .menu .links li {
+ position: relative;
+ border-bottom: 1px solid #e9e6e9;
+}
+
+.header .menu .links li a {
+ color: black;
+ padding: 10px;
+ display: block;
+ font-size: 16px;
+ font-weight: bold;
+}
+
+.header li:hover .menu {
+ opacity: 1;
+ z-index: 100;
+}
+
+/* End Menu */
 /* End Header */
 /* Start Landing */
 .Landing{
