@@ -232,7 +232,7 @@ section>div:nth-child(2){
 .about {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .about-text{
     margin-bottom: 10px;
